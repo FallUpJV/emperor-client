@@ -1,0 +1,17 @@
+<ion-header>
+	<ion-navbar>
+		<ion-searchbar placeholder="Search for friends"></ion-searchbar>
+	</ion-navbar>
+</ion-header>
+
+<ion-list>
+	<ion-list-header no-lines>
+			All your friends are here !
+	</ion-list-header>
+	<button ion-item *ngFor="let friend of friendsList">
+		<ion-avatar item-left>
+			<img src="assets/img/default_avatar.jpg" alt="avatar">
+		</ion-avatar>
+		{{ friend }}
+		</button>  
+</ion-list>

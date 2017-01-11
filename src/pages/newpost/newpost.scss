@@ -1,0 +1,39 @@
+page-newpost {
+	$space-between-elements: 5rem;
+
+	.newpost-content {
+		background-color: map-get($colors, primary);
+
+		.select-friend {
+			max-width: none;
+			background-color: map-get($colors, light);
+		}
+
+		.images-line {
+			margin-top: $space-between-elements;
+
+			button {
+				display: block;
+				margin: auto;
+				width: 9rem;
+				height: 9rem;
+				border-radius: 0.5rem;
+				background-size: cover;
+			}
+		}
+
+		.post-text {
+			margin-top: $space-between-elements;
+		}
+
+		.buttons-line {
+			margin-top: $space-between-elements;
+			text-align: center;
+			color: white;
+
+			button {
+				width: 80%;
+			}
+		}
+	}
+}

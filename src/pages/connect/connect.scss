@@ -1,0 +1,16 @@
+page-connect {
+	.modal-content {
+		background-color: map-get($colors, primary);
+
+		.logo-emperor {
+			display: block;
+			margin: auto;
+			height: 16rem;
+		}
+		.button-facebook {
+			margin-top: 5rem;
+			font-size: 1.6rem;
+			text-transform: none;
+		}
+	}
+}

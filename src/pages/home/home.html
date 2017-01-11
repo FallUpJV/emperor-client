@@ -1,0 +1,17 @@
+<ion-content class="home-content noscroll">
+    <ion-slides [options]="slideOptions">
+        <ion-slide *ngFor="let post of posts">
+            <ion-card>
+                <img class="post-image" src="assets/img/default_image.jpg" alt="fjords">
+                <ion-card-content><h1>{{post.message}}</h1></ion-card-content>
+                <button ion-button icon-left clear small class="btn-like">
+                    <ion-icon name="thumbs-up"></ion-icon> {{post.likes}}
+                </button>
+                <button ion-button icon-left clear small class="btn-like">
+                    <ion-icon name="thumbs-down"></ion-icon> {{post.dislikes}}
+                </button>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+    <button ion-button class="button-round-overlay" color="secondary" (click)="showNewPost()"><ion-icon name="add"></ion-icon></button>
+</ion-content>

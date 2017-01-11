@@ -1,0 +1,37 @@
+page-home {
+	.home-content {
+		//background-color: map-get($colors, secondary);
+		background-image: url("../assets/img/background.jpg");
+		background-size: cover;
+		
+		ion-card {
+			.post-image {
+				margin: auto;
+			}
+			.btn-like {
+				font-size: 1.8rem;
+				margin: auto 0;
+				padding: 0;
+				text-align: center;
+				width: 49%;
+			}
+		}
+
+		.button-round-overlay {
+			width: 5rem;
+		    height: 5rem;
+		    border-radius: 50%;
+		    position: absolute;
+		    bottom: 1.5rem;
+		    right: 1.5rem;
+		    font-size: 2rem;
+		    z-index: 2;
+		    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    		transition: linear 220ms;
+
+    		&.activated {
+    			box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    		}
+		}
+	}
+}

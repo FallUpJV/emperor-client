@@ -1,0 +1,53 @@
+<ion-header>
+	<ion-toolbar color="secondary">
+		<ion-title color="light">{{ messageForUser }}</ion-title>
+         <ion-buttons start>
+     		<button ion-button (click)="dismiss()">
+        		<ion-icon name="close"></ion-icon>
+      		</button>
+    	</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="newpost-content noscroll">
+	<form (ngSubmit)="dismiss()">
+		<ion-item>
+			<ion-label>Select a friend</ion-label>
+			<ion-select [(ngModel)]="post.addressedTo" name="addressedTo" required class="select-friend">
+				<ion-option *ngFor="let friend of friendsList" value="{{ friend }}">
+					{{ friend }}
+				</ion-option>
+			</ion-select>
+		</ion-item>
+		<ion-row class="images-line">
+			<ion-col width-33>
+				<button ion-button style="background-image: url(assets/img/default_image.jpg)"><ion-icon name="close"></ion-icon></button>
+			</ion-col>
+			<ion-col width-33>
+			</ion-col>
+			<ion-col width-33>
+			</ion-col>
+		</ion-row>
+		<ion-item class="post-text">
+			<ion-label stacked>Say something with that</ion-label>
+			<ion-textarea [(ngModel)]="post.text" name="text"></ion-textarea>
+		</ion-item>
+		<ion-row class="buttons-line">
+			<ion-col width-33>
+				<button ion-button color="secondary">
+					<ion-icon name="camera"></ion-icon>
+				</button>
+			</ion-col>
+			<ion-col width-33>
+				<button ion-button color="secondary">
+					<ion-icon name="photos"></ion-icon>
+				</button>
+			</ion-col>
+			<ion-col width-33>
+				<button ion-button color="secondary">
+					<ion-icon name="send"></ion-icon>
+				</button>
+			</ion-col>
+		</ion-row>
+	</form>
+</ion-content>
