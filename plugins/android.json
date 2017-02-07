@@ -1,0 +1,48 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.emperor"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "1104648792892160",
+            "APP_NAME": "Emperor",
+            "PACKAGE_NAME": "com.emperor"
+        },
+        "cordova-plugin-http": {
+            "PACKAGE_NAME": "com.emperor"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.emperor"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.emperor"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.emperor"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.emperor"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.emperor"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.emperor"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.emperor"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.emperor"
+        }
+    }
+}
