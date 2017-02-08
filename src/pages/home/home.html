@@ -1,13 +1,13 @@
 <ion-content class="home-content noscroll">
     <ion-slides [options]="slideOptions">
-        <ion-slide *ngFor="let post of posts">
+        <ion-slide *ngFor="let post of posts; let i = index">
             <ion-card>
-                <img class="post-image" src="assets/img/default_image.jpg" alt="fjords">
+                <img class="post-image" src="assets/img/default_image.png" alt="default">
                 <ion-card-content><h1>{{post.message}}</h1></ion-card-content>
-                <button ion-button icon-left clear small class="btn-like">
+                <button ion-button icon-left clear small class="btn-like" (click)="modifyLikes(i, true)">
                     <ion-icon name="thumbs-up"></ion-icon> {{post.likes}}
                 </button>
-                <button ion-button icon-left clear small class="btn-like">
+                <button ion-button icon-left clear small class="btn-like" (click)="modifyLikes(i, false)">
                     <ion-icon name="thumbs-down"></ion-icon> {{post.dislikes}}
                 </button>
             </ion-card>

@@ -14,8 +14,6 @@ export class ConnectPage {
 	}
 
 	login() {
-		this.FacebookConnect.login();
-
-		if(typeof this.FacebookConnect.error != "undefined") this.view.dismiss();
+		this.FacebookConnect.login(this.view);
 	}
 }

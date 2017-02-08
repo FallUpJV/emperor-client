@@ -10,15 +10,23 @@
         "cordova-plugin-dialogs": {
             "PACKAGE_NAME": "com.emperor"
         },
-        "cordova-plugin-facebook4": {
-            "APP_ID": "1104648792892160",
-            "APP_NAME": "Emperor",
-            "PACKAGE_NAME": "com.emperor"
-        },
         "cordova-plugin-http": {
             "PACKAGE_NAME": "com.emperor"
         },
         "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.emperor"
+        },
+        "cordova-plugin-facebook4": {
+            "APP_ID": "378153945889289",
+            "APP_NAME": "EmperorClient",
+            "PACKAGE_NAME": "com.emperor"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "XWALK_VERSION": "23+",
+            "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+            "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+            "XWALK_MODE": "embedded",
+            "XWALK_MULTIPLEAPK": "true",
             "PACKAGE_NAME": "com.emperor"
         }
     },

@@ -1,10 +1,12 @@
 page-home {
 	.home-content {
 		//background-color: map-get($colors, secondary);
-		background-image: url("../assets/img/background.jpg");
+		background-image: url("../assets/img/background.png");
 		background-size: cover;
 		
 		ion-card {
+			box-shadow: none;
+
 			.post-image {
 				margin: auto;
 			}

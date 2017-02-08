@@ -1,4 +1,4 @@
 export const AppConfig = {
-	FBID: 1104648792892160,
+	FBID: 378153945889289,
 	server: "http://www.googhduoifehfmizegiole.com/"
 }; 

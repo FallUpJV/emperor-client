@@ -24495,8 +24495,12 @@ page-connect .modal-content .button-facebook {
 }
 
 page-home .home-content {
-  background-image: url("../assets/img/background.jpg");
+  background-image: url("../assets/img/background.png");
   background-size: cover;
+}
+
+page-home .home-content ion-card {
+  box-shadow: none;
 }
 
 page-home .home-content ion-card .post-image {
